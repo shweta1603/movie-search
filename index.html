@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav>
+        <h2> The Movie Store </h2>
+        <input name="movie-name" type="text" id="query-input"/>
+        <button onclick="searchMovieHandler()"> Search </button>
+
+        <script src="script.js"></script>
+    </nav>
+    <main>
+        <h2> Movie List </h2>
+        <div id="movie-box">
+          <div id="inner-movie-box">
+        <h3 id="search-key-heading"> Search Key </h3>
+
+        <ul id="movies-list">
+
+        </ul>
+          </div>
+
+          <div id="inner-fav-movie-box">
+        <h3> Favourite Movies</h3>
+        <button id="favourite-toggle" onclick="addFavouriteMoviesToList()"> Show Favourite </button>
+        <ul id="fav-movies-list">
+         
+        </ul>
+          </div>
+    </div>
+    </main>
+</body>
+</html>
